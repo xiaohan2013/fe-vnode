@@ -1,0 +1,32 @@
+{
+  "name": "fe-vnode",
+  "version": "0.0.1",
+  "description": "virtual dom",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/xiaohan2013/fe-vnode.git"
+  },
+  "keywords": [
+    "virtual",
+    "dom"
+  ],
+  "author": "xiaohan2013",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xiaohan2013/fe-vnode/issues"
+  },
+  "homepage": "https://github.com/xiaohan2013/fe-vnode#readme",
+  "dependencies": {
+    "snabbdom": "^0.7.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.25.0",
+    "babel-loader": "^7.1.1",
+    "webpack": "^3.4.1",
+    "webpack-dev-server": "^2.6.1"
+  }
+}
