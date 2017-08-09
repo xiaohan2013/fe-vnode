@@ -1,6 +1,6 @@
 # VirtulaDOM的想法
 
-####目录
+#### 目录
 1. virtual dom的思想来源[Boiling React Down to a Few Lines in jQuery](http://hackflow.com/blog/2015/03/08/boiling-react-down-to-few-lines-in-jquery/)
 2. virtual dom参考文章[vdom](http://www.jianshu.com/p/b461657e49c0)
 
