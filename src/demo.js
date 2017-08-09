@@ -6,10 +6,7 @@ var patch = snabbdom.init([
     require('snabbdom/modules/eventlisteners').default,
 ])
 
-
 var h = require('snabbdom/h').default;
-
-var container = document.getElementById('container');
 
 var vnode = h('div#container.two.classes', {
     on: { click: someFn }
@@ -20,8 +17,12 @@ var vnode = h('div#container.two.classes', {
 ])
 
 // Patch into empty DOM Element - this modifies the DOM as a side effect.
+var container = document.getElementById('container');
 patch(container, vnode);
-
+window.addEventListener('DOMContentLoaded', function() {
+    // vnode = patch(container, view(data));
+    // render();
+});
 
 var newVnode = h('div#container.two.classes', { on: { click: anotherEventHandler } }, [
     h('span', { style: { fontWeight: 'normal', fontStyle: 'italic' } }, 'This is now italic type'),
@@ -31,3 +32,11 @@ var newVnode = h('div#container.two.classes', { on: { click: anotherEventHandler
 
 // Second `patch` invocation
 patch(vnode, newVnode); // Snabbdom efficiently updates the old view to the new state
+
+function someFn() {
+    console.log("someeeeeeeeeeeeeeeeee function....")
+}
+
+function anotherEventHandler() {
+    console.log('annnnnnnnnnnnnooooooooooooo')
+}
